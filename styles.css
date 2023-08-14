@@ -1,4 +1,19 @@
+
 .main-container{
     display:flex;
     justify-content: space-evenly;
+
+.smimage{
+    width: 25px;
+    height: 25px;
+}
+#headericon{
+    width: 35px;
+    height: auto;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(172, 64, 172);
+
 }
