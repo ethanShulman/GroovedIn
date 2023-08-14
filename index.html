@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="main-container">
+
+        <div class="chart-date">
+            <h1>Billboard Hot 100</h1>
+            <input type="text" name="" placeholder="Enter Date" required />
+            <br />
+            <sub>Date format MM-DD-YYYY</sub>
+            <br />
+            <button type="button" class="btn btn-dark" onclick="dateAPIFunc()">Search</button>
+        </div>
+    </div>
+    
     <div class="header">
         <a href="index.html"> <img id="headericon" src="channels4_profile.jpeg" alt="musicicon"></a>
     </div>
@@ -40,8 +59,8 @@
 
         <a target="_blank" href="https://www.instagram.com/groovedincs/"> <img class="smimage" src="Instagram-Logo.png" alt="instagram"></a>
     </div>
+    <p style="text-align: center;">Top News of Music Artists</p>
     <div class="articlesflexbox">
-        <p></p>
         <div class="flexbox-itemarticles flexbox-item 1">1</div>
         <div class="flexbox-itemarticles flexbox-item 2">1</div>
         <div class="flexbox-itemarticles flexbox-item 3">1</div>
@@ -68,3 +87,5 @@
       </form>
 </body>
 </html>
+
+
