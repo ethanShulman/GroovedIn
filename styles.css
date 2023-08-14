@@ -49,3 +49,7 @@ position: sticky;
 width: 100vw;
 height: 300px;
 }
+#myVideo{
+    width: 100vw;
+    height: auto;
+}
