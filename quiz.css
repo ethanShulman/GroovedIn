@@ -1,0 +1,41 @@
+.quizContainer{
+    display: grid;
+
+    background-color: rgb(248, 248, 248);
+    width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+body{
+    display: flex;
+    background-image: url(holographic-colorful-pastel-cute-pink-purple-gradient-fluid-vector-background-poster-cards_659214-174.avif.avif.avif);
+    justify-content: center;
+    margin-top: 25cqmin;
+    
+}
+
+.buttonContainer{
+    display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: bisque;
+    outline: 0ch;
+    outline-color: blue;
+}
+
+.btn:hover {
+    background-color: rgb(234, 125, 216);
+}
+
+.wrong-answer.active{
+    background-color: red;
+}
