@@ -51,6 +51,15 @@ webkit sticky */
     border: 3px solid black;
     background-color: white;
 }
+.music-background{
+justify-content: center;
+display: flex;
+}
+.music-header-background{
+position: sticky;
+width: 100vw;
+height: 300px;
+}
 
 .social-media {
     display: flex;
@@ -63,12 +72,11 @@ webkit sticky */
     width: 100vw;
 }
 .articlelinks{
-    color: black;
+    color: grey;
     text-decoration: none;
 }
 .card-img-top{
     height: 400px;
-    width: auto;
 }
 .video-container {
     position: relative;
@@ -100,19 +108,5 @@ video {
     font-size: 18px; /* Adjust font size for paragraph */
 }
 .custom-navbar{
-    background-color: #ACB1D6;
-    position: fixed;
-    top: 0px;
-}
-.card-body{
-    background-color: #ACB1D6;
-}
-.news-title{
-    text-align: center;
-    margin: 25px;
-}
-#record-btn{
-    cursor: pointer;
-    height: 200px;
-    height: 200px;
+    background-color: #8294C4;
 }
