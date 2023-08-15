@@ -13,17 +13,107 @@
       crossorigin="anonymous"
     />
     
-    <title>Document</title>
+    <title> GroovedIn</title>
   </head>
   <body>
-    
+    <div class="background-container">
     <div class="header">
       <a href="index.html"> <img id="headericon" src="channels4_profile.jpeg" alt="musicicon"></a>
     </div>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">GroovedIn</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Meet the Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <div class="music-background">
       <img class="music-header-background" src="download.jpeg" alt="music-background">
     </div>
-    <p style="text-align: center;">Top 5 Hits of August 2023</p>
+
+    <div class="video-container">
+    <video autoplay muted loop id="myVideo">
+        <source src="Lofibackground.mp4" type="video/mp4">
+      </video>
+      <div class="text-overlay">
+        <h1>Welcome to GroovedIn</h1>
+        <p>The Haven for Music Lovers <br>
+          and <br>
+          Music Content</p>
+    </div>
+
+    </div>
+    <h2 style="text-align: center;">Top Music News of August 2023</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+             <a href="https://pitchfork.com/news/lizzo-sued-by-former-dancers-for-sexual-harassment-creating-a-hostile-work-environment/" target="_blank"> <img src="lizzo-sued-by-former-dancers-for-sexual-harassment-creating-v0-0BwSRHrQWkWI_6mA19wQe4ggXoqD7l6WM77MoDhaJaU.webp" class="card-img-top" alt="lizzo"> </a>
+            <div class="card-body">
+              <h5 class="card-title">Lizzo Controvery</h5>
+              <a class="articlelinks" href="https://pitchfork.com/news/lizzo-sued-by-former-dancers-for-sexual-harassment-creating-a-hostile-work-environment/" target="_blank"><p class="card-text">Lizzo Sued by Former Dancers for Sexual Harassment, Creating a Hostile Work Environment</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="https://enterthejam.com/department-of-justice-prepares-lawsuit-against-ticketmaster-live-nation/"><img src="department-of-justice-prepares-lawsuit-against-ticketmaster-v0-1g-Eng6_YO_U3ivZxW2ePxfm3n-P1xA4bdYoqi8A9hQ.webp" class="card-img-top" alt="justice"></a>
+            <div class="card-body">
+              <h5 class="card-title">Department of Justice vs. Ticketmaster</h5>
+              <a class="articlelinks" href="https://enterthejam.com/department-of-justice-prepares-lawsuit-against-ticketmaster-live-nation/"><p class="card-text">Department of Justice Prepares Lawsuit Against Ticketmaster, Live Nation</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="https://abc7chicago.com/dj-casper-death-chicago-cha-slide/13615632/"><img src="chicago-native-dj-casper-creator-of-the-cha-cha-slide-has-v0-DbX1T1QNDbg8yplb_gRKWMHTREBAUXBWB_n7ib9PYTg.webp" class="card-img-top" alt="dj-casper"></a>
+            <div class="card-body">
+              <h5 class="card-title">DJ Casper Dead at 58</h5>
+              <a class="articlelinks" href="https://abc7chicago.com/dj-casper-death-chicago-cha-slide/13615632/"><p class="card-text">Chicago native DJ Casper, creator of the "Cha-Cha Slide," has died at 58 after cancer battle</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="https://www.rollingstone.com/music/music-features/yellowcard-ocean-avenue-anniversary-interview-1234804760/"><img src="yellow-card-ocean-avenue-anny.webp" class="card-img-top" alt="yellowcard"> </a>
+            <div class="card-body">
+              <h5 class="card-title">Yellowcard Comes Back!</h5>
+              <a class="articlelinks" href="https://www.rollingstone.com/music/music-features/yellowcard-ocean-avenue-anniversary-interview-1234804760/"><p class="card-text">Yellowcard Is Suddenly Huge Again — And They Don't Know Why</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <h2 style="text-align: center;">Top 5 Hits of August 2023</h2>
     <div class="tophitsflexbox">
       <div class="flexbox-itemhits flexbox-item 1">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CUj2AWEJnwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -50,6 +140,19 @@
           <input type="text" id="chart-text-box" name="" placeholder="Enter Date" required />
           </div>
         </div>
+    <div class="main-container">
+
+      <div class="chart-date">
+          <h1>Billboard Hot 100</h1>
+          <input type="text" name="" placeholder="Enter Date" required />
+          <br />
+          <sub>Date format MM-DD-YYYY</sub>
+          <br />
+          <button type="button" class="btn btn-dark" onclick="dateAPIFunc()">Search</button>
+      </div>
+  </div>
+    <div class="social-media">
+        <a target="_blank" href="https://twitter.com/GroovedInCs"><svg viewBox="0 0 24 24" aria-hidden="true" class="smimage"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg></a>
         
         <sub>Date format YYYY-DD-MM</sub>
         <br />
@@ -65,4 +168,23 @@
       crossorigin="anonymous"
     ></script>
   </body>
+    <form action="action_page.php">
+        <div class="newslettercontainer">
+          <h2>Subscribe to GroovedIn's Newsletter</h2>
+          <p>Get all the latest news about your favorite artists and top hits!</p>
+        </div>
+      
+        <div class="newslettercontainer" style="background-color:white">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Monthly Newsletter
+          </label>
+        </div>
+        <div class="newslettercontainer">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+  </div>
+</body>
 </html>
