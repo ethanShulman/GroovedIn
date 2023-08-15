@@ -116,10 +116,20 @@ video {
 .custom-navbar{
     background-color: #8294C4;
 }
-#record-btn{
+#person{
     cursor: pointer;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#record-btn{
     height: 200px;
     width: 200px;
+    cursor: pointer;
+
+
 }
 #data-container{
     border-width: 1.5px;
