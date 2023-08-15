@@ -89,53 +89,38 @@
 const currentDate = '2023-08-14'; // Replace with the desired date
 
 
-const dateAPIFunc = async (date) => {
+const dateAPIFunc = async(date) =>{
+    const apiDataContainer = document.getElementById("billboard-container");
+
+    const url = `https://billboard-api2.p.rapidapi.com/hot-100?date=${date}&range=1-10`;
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'd17394ccc1mshee0c1a995db6e10p18d818jsne9e96816334f',
+            'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
+        }
+    };
+    
     try {
-        const apiDataContainer = document.getElementById("billboard-container");
-
-        const inputBox = document.getElementById("chart-text-box");
-        date = inputBox.value;
-        
-        // Create a new container element for each fetched data
-        const dataContainer = document.createElement("div");
-        dataContainer.className = "data-container";
-
-        const url = `https://billboard-api2.p.rapidapi.com/hot-100?date=${date}&range=1-10`;
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '54d7f10307mshf57da4501ff2029p1462b9jsnd9b04a80d7fc',
-                'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
-            }
-        };
-
         const response = await fetch(url, options);
-        const responseData = await response.json();
-        console.log("data", responseData.songs);
+        const result = await response.text();
+        // Clear existing content
+        apiDataContainer.innerHTML = "";
 
-        // Format the fetched data and insert it into the data container
-        // const dataHTML = `
-        //     <h2>${date} Billboard Hot 100</h2>
-        //     // <ul>
-        //     //     ${responseData.songs.map(song => `<li>${song.title} - ${song.artist}</li>`).join("")}
-        //     // </ul>
-        // `;
-        dataContainer.innerHTML = dataHTML;
+        // Create a new <pre> element to display the JSON data
+        const jsonElement = document.createElement("pre");
+        jsonElement.innerText = JSON.stringify(result, null, 2);
 
-        // Append the data container to the main apiDataContainer
-        apiDataContainer.appendChild(dataContainer);
+        // Append the <pre> element to the container
+        apiDataContainer.appendChild(jsonElement);
+
+        console.log(result);
     } catch (error) {
         console.error(error);
     }
 }
+dateAPIFunc("2019-05-11");
 
-// Array of dates for which you want to fetch and display data
-const datesToFetch = ['2023-08-14', '2023-08-07', '2023-07-31']; // Add more dates as needed
-
-// Call dateAPIFunc for each date
-// for (const date of datesToFetch) {
-//     dateAPIFunc(date);
-// }
 
 
 
