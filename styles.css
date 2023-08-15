@@ -1,3 +1,9 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 .background-container{
     background-color: #8294C4;
 }
@@ -72,7 +78,7 @@ height: 300px;
     width: 100vw;
 }
 .articlelinks{
-    color: grey;
+    color: black;
     text-decoration: none;
 }
 .card-img-top{
@@ -120,8 +126,7 @@ video {
     display: grid;
     grid-template-columns: repeat(auto-fill, 100px);
     grid-template-rows: repeat(auto-fill, 100px);
-
-    
-
-
+}
+.card-body{
+    background-color: #8294C4;
 }
