@@ -86,6 +86,7 @@
 // }
 
 // Call the function with a specific date
+// import * as mdb from 'mdb-ui-kit'; // lib
 const currentDate = '2023-08-14'; // Replace with the desired date
 
 
@@ -101,23 +102,23 @@ const dateAPIFunc = async(date) =>{
         }
     };
     
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        // Clear existing content
-        apiDataContainer.innerHTML = "";
+    // try {
+    //     const response = await fetch(url, options);
+    //     const result = await response.text();
+    //     // Clear existing content
+    //     apiDataContainer.innerHTML = "";
 
-        // Create a new <pre> element to display the JSON data
-        const jsonElement = document.createElement("pre");
-        jsonElement.innerText = JSON.stringify(result, null, 2);
+    //     // Create a new <pre> element to display the JSON data
+    //     const jsonElement = document.createElement("pre");
+    //     jsonElement.innerText = JSON.stringify(result, null, 2);
 
-        // Append the <pre> element to the container
-        apiDataContainer.appendChild(jsonElement);
+    //     // Append the <pre> element to the container
+    //     apiDataContainer.appendChild(jsonElement);
 
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
+    //     console.log(result);
+    // } catch (error) {
+    //     console.error(error);
+    // }
 }
 dateAPIFunc("2019-05-11");
 
