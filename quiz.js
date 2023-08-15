@@ -113,9 +113,16 @@ function showQuestion() {
     answersElement.innerHTML = ""; // Clear existing answer buttons
 
     questionObj.answers.forEach(answer => {
+        console.log(answer)
         const button = document.createElement("button");
         button.innerText = answer.text;
         button.classList.add("btn");
+        if(answer.correct==false){
+            button.classList.add("wrong-answer")
+            button.addEventListener('click', function(){
+                button.classList.toggle('active')
+            })
+        }
         button.addEventListener("click", () => clickedAnswer(answer.correct));
         answersElement.appendChild(button);
     });
