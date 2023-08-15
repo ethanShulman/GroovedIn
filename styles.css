@@ -111,3 +111,8 @@ video {
     text-align: center;
     margin: 25px;
 }
+#record-btn{
+    cursor: pointer;
+    height: 200px;
+    height: 200px;
+}
