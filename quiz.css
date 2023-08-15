@@ -1,19 +1,32 @@
 .quizContainer{
     display: grid;
 
-    background-color: rgb(248, 248, 248);
+height: 50%;
     width: 800px;
   max-width: 80%;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px 2px;
+  margin-top: 10%;
+}
+#test{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+#navbar{
+display: flex;
+flex-direction: column
 }
 body{
     display: flex;
     background-image: url(holographic-colorful-pastel-cute-pink-purple-gradient-fluid-vector-background-poster-cards_659214-174.avif.avif.avif);
     justify-content: center;
     margin-top: 25cqmin;
+    flex-direction: column;
+    /* align-items: center; */
     
 }
 
