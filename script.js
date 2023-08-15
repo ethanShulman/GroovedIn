@@ -96,7 +96,7 @@ const dateAPIFunc = async(date) =>{
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'd17394ccc1mshee0c1a995db6e10p18d818jsne9e96816334f',
+            'X-RapidAPI-Key': '20a64ee5d7mshe55ed22f64c39b4p13e3dajsnfd6af526ec7f',
             'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
         }
     };
