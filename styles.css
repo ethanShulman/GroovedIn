@@ -115,6 +115,7 @@ video {
 }
 .custom-navbar{
     background-color: #8294C4;
+    display: flex;
 }
 #person{
     cursor: pointer;
@@ -139,4 +140,10 @@ video {
 }
 .card-body{
     background-color: #8294C4;
+}
+.billboard-container{
+    background-color: #8294C4;
+}
+.custom-footer{
+    background-color: red !important
 }
