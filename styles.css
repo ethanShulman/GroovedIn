@@ -110,3 +110,8 @@ video {
 .custom-navbar{
     background-color: #8294C4;
 }
+#record-btn{
+    cursor: pointer;
+    height: 200px;
+    height: 200px;
+}
