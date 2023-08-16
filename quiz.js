@@ -1,4 +1,5 @@
-// This will be the quiz section
+// This will be the quiz section 
+
 
 const questions = [
     {
@@ -92,12 +93,15 @@ const questions = [
         ]
     }
 ];
+// using dom to get Elements from HTML
 const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("getAnswer"); 
 const nextButton = document.getElementById("nextButton");
 
+// index place
 let currentQuestionIndex = 0; 
 
+// created a function with clear places
 function startQuiz() {
     currentQuestionIndex = 0;
     questionElement.innerText = "";
@@ -105,29 +109,34 @@ function startQuiz() {
     nextButton.disabled = true;
     showQuestion();
 }
-
+// created a function with innertext to display questions and answer 
 function showQuestion() {
     const questionObj = questions[currentQuestionIndex];
     questionElement.innerText = questionObj.question;
 
     answersElement.innerHTML = ""; // Clear existing answer buttons
 
+    // use for each in order to create buttons
     questionObj.answers.forEach(answer => {
         console.log(answer)
         const button = document.createElement("button");
         button.innerText = answer.text;
         button.classList.add("btn");
+
+        // wrong answer will stay red when clicked
         if(answer.correct==false){
             button.classList.add("wrong-answer")
             button.addEventListener('click', function(){
                 button.classList.toggle('active')
             })
         }
+        // eventlistenr for the answer buttons
         button.addEventListener("click", () => clickedAnswer(answer.correct));
         answersElement.appendChild(button);
     });
 }
 
+// this is for the disable button, if answer is clicked true or false
 function clickedAnswer(isCorrect) {
     if (isCorrect) {
         nextButton.disabled = false;
@@ -138,13 +147,15 @@ function clickedAnswer(isCorrect) {
         
     
 
-
+// 
 function nextQuestion() {
+    // going through the Array of questions 
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
-        questionElement.innerText = "Quiz completed!";
+        // completion of quiz shows message, displaying that messsage
+        questionElement.innerText = "GoodJob!!";
         answersElement.innerHTML = "";
         nextButton.disabled = true;
     }

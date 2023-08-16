@@ -5,8 +5,9 @@ body,html{
     width: 100%;
 }
 .background-container{
-    background-color: #8294C4;
+    background-color: #dbb6f8;
 }
+
 
 .main-container{
     display:flex;
@@ -100,8 +101,8 @@ video {
     left: 50%; /* Adjust horizontally as needed */
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Text color */
-    font-size: 24px; /* Adjust font size as needed */
+    color: rgb(227, 188, 188); /* Text color */
+    font-size: 1000000px; /* Adjust font size as needed */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
 }
 
@@ -140,11 +141,36 @@ video {
     grid-template-rows: repeat(auto-fill, 100px);
 }
 .card-body{
-    background-color: #8294C4;
+    background-color: #dbb6f8;
 }
 .billboard-container{
     background-color: #8294C4;
 }
 .custom-footer{
     background-color: red !important
+}
+.top5divider{
+    height: 3px;;
+    background-color: aliceblue;
+}
+
+.bottom5divider {
+    height: 3px;;
+    background-color: aliceblue; 
+}
+.dividernews {
+    height: 3px;;
+    background-color:white; 
+}
+
+.dividernewsB {
+    height: 3px;;
+    ; 
+}
+.news-title {
+    text-align: center;
+    color: rgb(0, 0, 0);  
+}
+.topfivecolor{
+    background-color: #8294C4;
 }
