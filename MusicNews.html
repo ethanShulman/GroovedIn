@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="channels4_profile.jpeg" type="image/x-icon">
+    <title>Music News</title>
+</head>
+<body style="background-color:#8294C4 ;">
+    
+    <div class="header">
+        <a href="index.html"> <img id="headericon" src="channels4_profile.jpeg" alt="musicicon"></a>
+      </div>
+        <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">GroovedIn</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="MusicNews.html">Music News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="TopMonthlySongs.html">Top Monthly Songs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a target="_blank" class="nav-link active" aria-current="page" href="quiz.html">Fun Music Quiz</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About GrooveIn
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Mission</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  href="">
+                      Subscribe
+            
+                    </a>
+                  </li>
+                </ul>
+                
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61550253417677" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/GroovedInCs" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/groovedincs/" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://ethanshulman.github.io/GroovedIn/" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+                
+                <form class="d-flex" role="search">
+                </form>
+              </div>
+            </div>
+          </nav>
+    
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form   action="https://formspree.io/f/xdorebyb"
+                  method="POST">
+                  <div class="newslettercontainer">
+                    <h2>Subscribe to GroovedIn's Newsletter</h2>
+                    <p>Get all the latest news about your favorite artists and top hits!</p>
+                  </div>
+                  <div class="newslettercontainer" style="background-color:white">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <label>
+                      <input type="checkbox" checked="checked" name="subscribe"> Monthly Newsletter
+                    </label>
+                  </div>
+                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+    <h2 class="news-title">Top Music News of August 2023</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <a href="https://pitchfork.com/news/lizzo-sued-by-former-dancers-for-sexual-harassment-creating-a-hostile-work-environment/" target="_blank"> <img src="lizzo-sued-by-former-dancers-for-sexual-harassment-creating-v0-0BwSRHrQWkWI_6mA19wQe4ggXoqD7l6WM77MoDhaJaU.webp" class="card-img-top" alt="lizzo"> </a>
+          <div class="card-body">
+            <h5 class="card-title">Lizzo Controvery</h5>
+            <a class="articlelinks" href="https://pitchfork.com/news/lizzo-sued-by-former-dancers-for-sexual-harassment-creating-a-hostile-work-environment/" target="_blank"><p class="card-text">Lizzo Sued by Former Dancers for Sexual Harassment, Creating a Hostile Work Environment</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://enterthejam.com/department-of-justice-prepares-lawsuit-against-ticketmaster-live-nation/" target="_blank"><img src="department-of-justice-prepares-lawsuit-against-ticketmaster-v0-1g-Eng6_YO_U3ivZxW2ePxfm3n-P1xA4bdYoqi8A9hQ.webp" class="card-img-top" alt="justice"></a>
+          <div class="card-body">
+            <h5 class="card-title">Department of Justice vs. Ticketmaster</h5>
+            <a class="articlelinks" href="https://enterthejam.com/department-of-justice-prepares-lawsuit-against-ticketmaster-live-nation/" target="_blank"><p class="card-text">Department of Justice Prepares Lawsuit Against Ticketmaster, Live Nation</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://abc7chicago.com/dj-casper-death-chicago-cha-slide/13615632/" target="_blank"><img src="chicago-native-dj-casper-creator-of-the-cha-cha-slide-has-v0-DbX1T1QNDbg8yplb_gRKWMHTREBAUXBWB_n7ib9PYTg.webp" class="card-img-top" alt="dj-casper"></a>
+          <div class="card-body">
+            <h5 class="card-title">DJ Casper Dead at 58</h5>
+            <a class="articlelinks" href="https://abc7chicago.com/dj-casper-death-chicago-cha-slide/13615632/" target="_blank"><p class="card-text">Chicago native DJ Casper, creator of the "Cha-Cha Slide," has died at 58 after cancer battle</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://www.rollingstone.com/music/music-features/yellowcard-ocean-avenue-anniversary-interview-1234804760/" target="_blank"><img src="yellow-card-ocean-avenue-anny.webp" class="card-img-top" alt="yellowcard"> </a>
+          <div class="card-body">
+            <h5 class="card-title">Yellowcard Comes Back!</h5>
+            <a class="articlelinks" href="https://www.rollingstone.com/music/music-features/yellowcard-ocean-avenue-anniversary-interview-1234804760/" target="_blank"><p class="card-text">Yellowcard Is Suddenly Huge Again — And They Don't Know Why</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://www.ktvu.com/news/beyonce-selling-listening-only-tickets-for-157-tour?fbclid=IwAR3wqN1fRzjUgZpIn2wrQ438rluqg8IUSnScJuit3XlRlLoKAMFs5rYDu3g_aem_AdJmaIF3kMeiHCduPUt_VsTRYV-dmXNmhc7oaPx38dFv7BdNBPkhYribhQPxF6xAqo0" target="_blank"><img src="beyoncé-selling-157-listening-only-tickets-for-renaissance-v0-1Bhj2QIo9jPZGmiXzsLk1XqRhUlmnTtMqTUUHBPHQ14.webp" class="card-img-top" alt="justice"></a>
+          <div class="card-body">
+            <h5 class="card-title">Beyonce Selling Tickets How Much?!</h5>
+            <a class="articlelinks" href="https://www.ktvu.com/news/beyonce-selling-listening-only-tickets-for-157-tour?fbclid=IwAR3wqN1fRzjUgZpIn2wrQ438rluqg8IUSnScJuit3XlRlLoKAMFs5rYDu3g_aem_AdJmaIF3kMeiHCduPUt_VsTRYV-dmXNmhc7oaPx38dFv7BdNBPkhYribhQPxF6xAqo0" target="_blank"><p class="card-text">Beyoncé selling $157 'listening-only' tickets for ‘Renaissance’ tour, angering fans</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://killyourstereo.com/news/josh-homme-thinks-bands-who-don-t-play-the-hits-are-c-nty/vIgCrtHQ09I/03-08-23" target="_blank"><img src="josh.webp" class="card-img-top" alt="yellowcard"> </a>
+          <div class="card-body">
+            <h5 class="card-title">Josh Said What?</h5>
+            <a class="articlelinks" href="https://killyourstereo.com/news/josh-homme-thinks-bands-who-don-t-play-the-hits-are-c-nty/vIgCrtHQ09I/03-08-23" target="_blank"><p class="card-text">Josh Homme Thinks Bands Who Don't Play The Hits Are 'C*nty'</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://www.theguardian.com/society/2023/aug/06/ian-watkins-singer-jailed-for-child-sex-offences-stabbed-in-prison" target="_blank"><img src="jail.avif.avif" class="card-img-top" alt=""> </a>
+          <div class="card-body">
+            <h5 class="card-title">Ian Watkins Is Scum</h5>
+            <a class="articlelinks" href="https://www.theguardian.com/society/2023/aug/06/ian-watkins-singer-jailed-for-child-sex-offences-stabbed-in-prison" target="_blank"><p class="card-text">
+              Ian Watkins, singer jailed for sexually abusing children, ‘stabbed in prison’</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="https://www.theguardian.com/society/2023/aug/06/ian-watkins-singer-jailed-for-child-sex-offences-stabbed-in-prison" target="_blank"><img src="sinéad-oconnor-acclaimed-dublin-singer-dies-aged-56-v0-v7hpxJ27cwNzYo1llQcWmd6jS3CdjgnIkLdR2QSC-aE.webp" class="card-img-top" alt=""> </a>
+          <div class="card-body">
+            <h5 class="card-title">Sinéad O'Connor Passed Away At 56</h5>
+            <a class="articlelinks" href="https://www.irishtimes.com/culture/music/2023/07/26/sinead-oconnor-acclaimed-dublin-singer-dies-aged-56/" target="_blank"><p class="card-text">
+              Sinéad O’Connor, acclaimed Dublin singer, dies aged 56</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footercontainer">
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block">
+                <span>Get connected:</span>
+              </div>
+              <!-- Left -->
+              
+              <!-- Right -->
+              <div>
+                <a href="https://www.facebook.com/profile.php?id=61550253417677" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/GroovedInCs" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/groovedincs/" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://ethanshulman.github.io/GroovedIn/" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+            
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>GroovedIn
+                    </h6>
+                    <p>
+                      Welcome to Groovedin, your ultimate online destination for music enthusiasts seeking the perfect harmony between entertainment and knowledge. Much like Buzzfeed, Groovedin is a vibrant and engaging music blog that offers a diverse range of content designed to captivate and entertain music lovers of all tastes
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+                  
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Connect with the Team
+                    </h6>
+                    <p>
+                      <a target="_blank" href="https://www.linkedin.com/in/johnn4127/" class="text-reset">John Nguyen</a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="https://www.linkedin.com/in/kethanesaintlouis/" class="text-reset">Kethane St. Louis</a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="https://www.linkedin.com/in/ian-voltaire-b15a04231/" class="text-reset">Ian Voltaire</a>
+                    </p>
+                    <p>
+                      <a target="_blank" href="https://www.linkedin.com/in/ethan-shulman-338889104/" class="text-reset">Ethan Shulman</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+                  
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      Subscribe to the Newsletter
+                    </h6>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  href="">
+                      Subscribe
+                    </a>
+                  </div>
+                  <!-- Grid column -->
+                  
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> 1300 Joseph E. Boone Blvd NW, Atlanta, GA 30314</p>
+                    <p>
+                      <i class="fas fa-envelope me-3"></i>
+                      GroovedInCS@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> 768-999-8121</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+              </div>
+            </section>
+            <!-- Section: Links  -->
+            
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2023 Copyright:
+              <a class="text-reset fw-bold" href="https://mdbootstrap.com/">GroovedIn</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

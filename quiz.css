@@ -53,3 +53,21 @@ body{
 .wrong-answer.active{
     background-color: red;
 }
+@media (max-width: 576px) {
+    /* Adjust styles for small devices here */
+}
+
+/* Media query for screens between 577px and 768px wide (medium devices) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Adjust styles for medium devices here */
+}
+
+/* Media query for screens between 769px and 992px wide (large devices) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Adjust styles for large devices here */
+}
+
+/* Media query for screens 993px and above (extra-large devices) */
+@media (min-width: 993px) {
+    /* Adjust styles for extra-large devices here */
+}
