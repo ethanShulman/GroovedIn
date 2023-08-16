@@ -1,132 +1,64 @@
-// // Function for the api lyric search
-// function dateApiFunc() {
-//     let date = "2023-08-10";
-// // Setting variable for api url
-// let apiUrl = `https://billboard-api2.p.rapidapi.com/hot-100?date=${date}&range=1-10`;
-// let options = {headers: {
-//     'X-RapidAPI-Key': 'd17394ccc1mshee0c1a995db6e10p18d818jsne9e96816334f',
-//     'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
-//     }
-// }
+const clientId = "5c7b82de4a714178908280886138635b";
+const clientSecret = "e6f93f6a61cc43fe9943c4baca443641";
 
-// // Fetching api
-// fetch(apiUrl, options)
-// .then(response => {
-//     if (!response.ok) {
-//         throw new Error("Network response is not ok");
-//     } else {
-//     return response.json();
-// }
-// })
-// .then(data => {
-//     console.log(data);
-// })
-// .catch(error => {
-//     console.error("Fetch error: ", error);
-// })
+// Function to obtain an access token
+const getAccessToken = async () => {
+    const tokenUrl = "https://accounts.spotify.com/api/token";
+    const basicAuthHeader = `Basic ${btoa(`${clientId}:${clientSecret}`)}`;
 
-// }
-
-// const dateAPIFunc = async(date) => {
-//     const apiData = document.getElementById("billboard-container");
-
-//     apiData.innerText = apiData;
-
-//     apiData.appendChild("billboard-container");
-
-//     const url = `https://billboard-api2.p.rapidapi.com/hot-100?date=${date}&range=1-10`;
-//     const options = {
-//         method: 'GET',
-//         headers: {
-//             'X-RapidAPI-Key': 'd17394ccc1mshee0c1a995db6e10p18d818jsne9e96816334f',
-//             'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
-//         }
-//     };
-    
-//     try {
-//         const response = await fetch(url, options);
-//         const result = await response.text();
-//         console.log(result);
-//     } catch (error) {
-//         console.error(error);
-
-    
-//     }
-// }
-// dateAPIFunc();
-
-// const dateAPIFunc = async (date) => {
-//     try {
-//         const apiDataContainer = document.getElementById;("billboard-container");
-
-//         // Clear the existing content of the container
-//         apiDataContainer.innerHTML = "";
-
-//         // Create a new paragraph element to display the fetched data
-//         const resultParagraph = document.createElement("p");
-//         apiDataContainer.appendChild(resultParagraph);
-
-//         const url = `https://billboard-api2.p.rapidapi.com/hot-100?date=${date}&range=1-10`;
-//         const options = {
-//             method: 'GET',
-//             headers: {
-//                 'X-RapidAPI-Key': 'd17394ccc1mshee0c1a995db6e10p18d818jsne9e96816334f',
-//                 'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
-//             }
-//         };
-
-//         const response = await fetch(url, options);
-//         const responseData = await response.json(); // Use json() to parse the response as JSON
-
-//         // Modify the paragraph's content to display the fetched data
-//         resultParagraph.innerText = JSON.stringify(responseData, null, 2);
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
-
-// Call the function with a specific date
-// import * as mdb from 'mdb-ui-kit'; // lib
-const currentDate = '2023-08-14'; // Replace with the desired date
-
-
-const dateAPIFunc = async(date) =>{
-    const apiDataContainer = document.getElementById("billboard-container");
-
-    const url = `https://billboard-api2.p.rapidapi.com/hot-100?date=${date}&range=1-10`;
     const options = {
-        method: 'GET',
+        method: "POST",
         headers: {
-            'X-RapidAPI-Key': '20a64ee5d7mshe55ed22f64c39b4p13e3dajsnfd6af526ec7f',
-            'X-RapidAPI-Host': 'billboard-api2.p.rapidapi.com'
+            "Authorization": basicAuthHeader,
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "grant_type=client_credentials"
+    };
+
+    const response = await fetch(tokenUrl, options);
+    const data = await response.json();
+    return data.access_token;
+};
+
+// Function to search for a track using the access token and display data on the webpage
+const searchTrackAndDisplayData = async (trackName) => {
+    const accessToken = await getAccessToken();
+    const apiUrl = `https://api.spotify.com/v1/search?q=${encodeURIComponent(trackName)}&type=track`; // Search for a track
+    const apiDataContainer = document.getElementById("spotify-container");
+
+    const options = {
+        method: "GET",
+        headers: {
+            "Authorization": `Bearer ${accessToken}`
         }
     };
-    
-    // try {
-    //     const response = await fetch(url, options);
-    //     const result = await response.text();
-    //     // Clear existing content
-    //     apiDataContainer.innerHTML = "";
 
-    //     // Create a new <pre> element to display the JSON data
-    //     const jsonElement = document.createElement("pre");
-    //     jsonElement.innerText = JSON.stringify(result, null, 2);
+    try {
+        const response = await fetch(apiUrl, options);
+        const data = await response.json();
 
-    //     // Append the <pre> element to the container
-    //     apiDataContainer.appendChild(jsonElement);
+        // Clear existing content
+        apiDataContainer.innerHTML = "";
 
-    //     console.log(result);
-    // } catch (error) {
-    //     console.error(error);
-    // }
-}
-dateAPIFunc("2019-05-11");
+        // Display the first track result or an error message
+        if (data.tracks && data.tracks.items.length > 0) {
+            const track = data.tracks.items[0];
+            const trackInfo = `
+                <h2>Track: ${track.name}</h2>
+                <p>Artist(s): ${track.artists.map(artist => artist.name).join(", ")}</p>
+                <p>Album: ${track.album.name}</p>
+                <p>Release Date: ${track.album.release_date}</p>
+                <img src="${track.album.images[0].url}" alt="${track.album.name}" width="150">
+            `;
+            apiDataContainer.innerHTML = trackInfo;
+        } else {
+            apiDataContainer.innerHTML = "<p>No track found.</p>";
+        }
+    } catch (error) {
+        console.error(error);
+    }
+};
 
-
-
-
-
-//Target the div with get element by id
-//assign the variable a value with either innerText or innerHTML
-//then append the varible  to the div that you want the data to appear in
-
+// Example: Call the function with a specific track name
+const trackName = "2000s Baby"; // Replace with the desired track name
+searchTrackAndDisplayData(trackName);
