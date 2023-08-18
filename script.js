@@ -1,3 +1,15 @@
+const trackInput = document.getElementById("track-input");
+const buttonFunc = document.getElementById("search-button")
+
+
+
+buttonFunc.addEventListener("click", () => {
+    searchTrackAndDisplayData(trackInput.value);
+})
+
+
+
+
 const clientId = "5c7b82de4a714178908280886138635b";
 const clientSecret = "e6f93f6a61cc43fe9943c4baca443641";
 
@@ -37,6 +49,8 @@ const searchTrackAndDisplayData = async (trackName) => {
         const response = await fetch(apiUrl, options);
         const data = await response.json();
 
+        console.log(data);
+
         // Clear existing content
         apiDataContainer.innerHTML = "";
 
@@ -60,5 +74,7 @@ const searchTrackAndDisplayData = async (trackName) => {
 };
 
 // Example: Call the function with a specific track name
-const trackName = "2000s Baby"; // Replace with the desired track name
-searchTrackAndDisplayData(trackName);
+// const trackName = "2000s Baby"; // Replace with the desired track name
+// searchTrackAndDisplayData("Bye Bye Bye");
+
+
