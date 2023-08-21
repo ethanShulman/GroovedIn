@@ -1,5 +1,18 @@
 // This will be the quiz section
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 const questions = [
     {
         question: "Which rapper's album Certified Lover Boy sparked a mix of excitement and memes on social media?",

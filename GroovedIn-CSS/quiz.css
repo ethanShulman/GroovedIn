@@ -53,6 +53,13 @@ body{
 .wrong-answer.active{
     background-color: red;
 }
+
+.custom-navbar{
+    background-color: #8294C4;
+
+}
+
+
 @media (max-width: 576px) {
     /* Adjust styles for small devices here */
 }
