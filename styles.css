@@ -7,6 +7,32 @@ body,html{
 .background-container{
     background-color: #8294C4;
 }
+.background-container {
+    background-color: #8294C4;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.background-container1{
+    background-color: #8294C4;
+
+}
+
+.body-container{
+    background-color: #8294C4;
+}
+#carouselExampleControls{
+    /* width: 500px; */
+    /* height: 500px; */
+    border-color: black;
+    border-style: dashed;
+    border-width: 2px;
+}
+.buttonP{
+    text-align: center;
+    text-decoration: underline;
+}
 
 .main-container{
     display:flex;
@@ -142,12 +168,28 @@ video {
 
 
 }
-#data-container{
-    border-width: 1.5px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 100px);
-    grid-template-rows: repeat(auto-fill, 100px);
+
+#meetTeam{
+    height: 250px;
+    width: 250px;
 }
+/* #meetMyTeam{
+    display: flex;
+    justify-content: center;
+} */
+#meetMyTeam img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    justify-content: center;
+    display: flex;
+}
+#data-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
 .card-body{
     background-color: #DBDFEA;
 }
