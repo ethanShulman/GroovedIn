@@ -22,7 +22,7 @@ flex-direction: column
 }
 body{
     display: flex;
-    background-image: url(holographic-colorful-pastel-cute-pink-purple-gradient-fluid-vector-background-poster-cards_659214-174.avif.avif.avif);
+    background-image: url(../article-pictures/quiz-background.avif);
     justify-content: center;
     margin-top: 25cqmin;
     flex-direction: column;
@@ -53,6 +53,13 @@ body{
 .wrong-answer.active{
     background-color: red;
 }
+
+.custom-navbar{
+    background-color: #8294C4;
+
+}
+
+
 @media (max-width: 576px) {
     /* Adjust styles for small devices here */
 }
