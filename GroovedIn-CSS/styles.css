@@ -7,6 +7,12 @@ body,html{
 .background-container{
     background-color: #8294C4;
 }
+.background-container1{
+    background-color: #8294c4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
 .main-container{
     display:flex;
@@ -16,6 +22,16 @@ body,html{
     border: 5px solid rgb(36, 0, 36);
     border-radius: 1%;
     
+}
+#meetMyTeam{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+#meetTeam{
+    height: 200px;
+    width: 200px;
 }
 
 
@@ -295,5 +311,17 @@ body {
     background-color: #8294C4;
     
 }
+#data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .buttonP{
+    text-align: center;
+    padding: 2px;
+    text-decoration: solid;
+    text-decoration: underline;
+  }
 
 
