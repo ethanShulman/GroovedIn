@@ -202,6 +202,7 @@ video {
 body, h1, h2, p, div {
     margin: 0;
     padding: 0;
+    color: #2a1e1e;
 }
 
 body {
@@ -216,6 +217,7 @@ body {
     align-items: center;
     margin: 20px 0;
     padding-top: 2%;
+    
 }
 
 #track-input {
@@ -276,5 +278,20 @@ body {
         width: 100%;
         margin-right: 0;
         margin-bottom: 10px;
+        
     }
 }
+
+.api-description {
+    color: rgb(105, 104, 105);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2a1e1e;
+    
+}
+
+.spot-api-box {
+    background-color: #8294C4;
+    
+}
+
+
